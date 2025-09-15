@@ -110,7 +110,7 @@ class CustomerTower(keras.Model):
             layers=[keras.layers.Concatenate()], name="common"
         )
         # TODO[Workshop]: Consider adding a dropout layer
-        # TODO[Workshop]]: Consider adding hidden dense layers
+        # TODO[Workshop]: Consider adding hidden dense layers
         self._common.add(keras.layers.UnitNormalization())
 
     def call(self, inputs: dict[str, tf.Tensor]) -> tf.Tensor:
@@ -132,13 +132,13 @@ class ProductTower(keras.Model):
                 feature_name=ProductFeatures.ID,
                 output_dim=FEATURE_EMBEDDING_DIMENSION,
             ),
-            # TODO[Workshop]]: Consider adding other product features
+            # TODO[Workshop]: Consider adding other product features
         }
         self._common = keras.Sequential(
             layers=[keras.layers.Concatenate()], name="common"
         )
-        # TODO[Workshop]]: Consider adding a dropout layer
-        # TODO[Workshop]]: Consider adding hidden dense layers
+        # TODO[Workshop]: Consider adding a dropout layer
+        # TODO[Workshop]: Consider adding hidden dense layers
         self._common.add(keras.layers.UnitNormalization())
 
     def call(self, inputs: dict[str, tf.Tensor]) -> tf.Tensor:
