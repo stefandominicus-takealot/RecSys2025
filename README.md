@@ -7,6 +7,9 @@ Recommender Systems at Takealot.com.
 ### Presenter
 Stefan Dominicus (Senior Machine Learning Software Engineer at Takealot.com).
 
+### Slides
+[Recommender Systems @ Takealot.com](Recommender%20Systems%20@%20Takealot.com.pdf)
+
 ## Getting Started
 
 ### [Optional] Using a GCP virtual machine
